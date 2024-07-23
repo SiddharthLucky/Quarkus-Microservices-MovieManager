@@ -13,7 +13,7 @@ import java.util.List;
 public class Film {
     @Id
     @Column(name = "film_id", nullable = false)
-    private Short id;
+    private Short filmId;
 
     @Column(name = "title", nullable = false)
     private String title;
@@ -62,11 +62,11 @@ public class Film {
     private List<Actor> actors = new ArrayList<>();
 
     public Short getId() {
-        return id;
+        return filmId;
     }
 
     public void setId(Short id) {
-        this.id = id;
+        this.filmId = id;
     }
 
     public String getTitle() {
