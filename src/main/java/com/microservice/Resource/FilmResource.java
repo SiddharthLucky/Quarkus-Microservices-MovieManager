@@ -1,6 +1,7 @@
 package com.microservice.Resource;
 
 
+import com.microservice.Entity.Actor;
 import com.microservice.Entity.Film;
 import com.microservice.Repository.FilmRepository;
 import jakarta.annotation.security.RolesAllowed;
@@ -11,10 +12,9 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-import java.awt.*;
-import java.util.Optional;
+import java.util.*;
 
-@Path("/")
+@Path("/film")
 public class FilmResource {
 
     @Inject

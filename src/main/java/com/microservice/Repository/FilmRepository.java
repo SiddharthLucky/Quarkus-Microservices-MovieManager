@@ -1,11 +1,15 @@
 package com.microservice.Repository;
 
+import com.microservice.Entity.Actor;
+import com.microservice.Entity.Actor$;
 import com.microservice.Entity.Film;
-import com.microservice.Entity.Film$;
 import com.speedment.jpastreamer.application.JPAStreamer;
+import com.speedment.jpastreamer.projection.Projection;
+import com.speedment.jpastreamer.streamconfiguration.StreamConfiguration;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
